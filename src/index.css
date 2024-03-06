@@ -99,7 +99,7 @@ header nav a.active{
 }
 
 .career-detail-location, .career-detail-salary{
-  transition: all 1.5s ease;
+  transition: all 0.8s ease;
 }
 .career-detail:hover{
   box-shadow: 0px 0px 20px rgba(99, 99, 169, 0.982);
@@ -143,6 +143,13 @@ header nav a.active{
 
   margin-bottom: 15px;
   margin-left: -8px;
+
+  transition: all 0.8s ease;
+}
+
+.career-detail:hover .career-detail-title{
+  text-shadow: 0px 0px 5px white;
+             
 }
 
 
@@ -153,3 +160,47 @@ header nav a.active{
   padding: 0px;
 }
 /***********************/
+
+/**/
+.career-error-message{
+  margin-top: 35px;
+  font-size: 1.4rem;
+}
+
+.career-error-title{
+  font-size: 2.2rem;
+}
+
+.goHome{
+
+  margin: 30px;
+  transition: all 0.5s ease;
+}
+.goHome:hover{
+  color: orangered;
+}
+
+/***/
+.breadcrumbs{
+  font-weight: lighter;
+  font-size: 1.3rem;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.breadcrumbs .crumb:after{
+  content: '>';
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after{
+  display: none;
+}
+.breadcrumbs .crumb a{
+  text-decoration: none;
+  color: white;
+}

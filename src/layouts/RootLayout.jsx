@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style/Header.module.css'
+import Breadcrumb from '../Pages/Breadcrumb'
 
 /* react-router */
 import {
@@ -20,6 +21,7 @@ export default function RootLayout() {
                 <NavLink to='help'>Help</NavLink>
                 <NavLink to='careers'>Careers</NavLink>
             </nav>
+            <Breadcrumb />
         </header>
 
         <main>
